@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para minha futura namorada</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap');
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to right, #ffe6f0, #fff0f5);
+      color: #4b2e2e;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    header {
+      background: #ff85a2;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      font-family: 'Pacifico', cursive;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 2s ease;
+    }
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .galeria img {
+      width: 220px;
+      height: auto;
+      border-radius: 1.5rem;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+    .musicas a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #ffcce0;
+      border-radius: 1rem;
+      text-decoration: none;
+      color: #a80055;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .musicas a:hover {
+      background: #ffa0c2;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #ffe4ec;
+      font-family: 'Pacifico', cursive;
+      color: #8c3a5d;
+      font-size: 1.2rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Para vc, minha linda ❤️</h1>
+    <p>Esse site é um pedacinho do quanto você é especial pra mim.</p>
+  </header>
+
+  <section>
+    <h2>Palavras do Coração</h2>
+    <p>Amor, cada momento com você é único e precioso. Você transforma meus dias com o seu sorriso, seu carinho e sua presença. Esse site é só uma forma de eternizar tudo que sinto por você.</p>
+  </section>
+
+  <section>
+    <h2>Galeria de Fotos</h2>
+    <div class="galeria">
+      <img src="fotos/ela1.jpg" alt="Ela linda">
+      <img src="fotos/nos1.jpg" alt="Nós dois">
+      <img src="fotos/ela2.jpg" alt="Ela sorrindo">
+      <img src="fotos/nos2.jpg" alt="Mais um momento nosso">
+    </div>
+  </section>
+
+  <section class="musicas">
+    <h2>Músicas que Me Fazem Pensar em Você</h2>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Playlist para a lelis</a>
+    <a href="https://www.youtube.com/watch?v=3JWTaaS7LdU" target="_blank">Lembra de nós</a>
+  </section>
+
+  <footer>
+    <p> </p>
+  </footer>
+
+  <script>
+    // Animação de entrada ao rolar a página
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      sections.forEach(sec => {
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 400;
+        const height = sec.offsetHeight;
+        if (top > offset && top < offset + height) {
+          sec.style.animation = 'fadeIn 2s ease';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
