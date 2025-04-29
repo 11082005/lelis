@@ -203,92 +203,52 @@
       to { opacity: 1; transform: translateY(0); }
     }
   </style>
-</head>
-<body>
-  <!-- Corações animados -->
-  <div class="hearts"></div>
-
-
-  <!-- Música de fundo -->
-  <iframe style="border-radius:12px" 
-  src="https://open.spotify.com/embed/track/66fVMFVA9WGRtwLCaF93U5?utm_source=generator" 
-  width="100%" height="80" frameBorder="0" allowfullscreen="" 
-  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-  loading="lazy">
-</iframe>
-
-
-  <header>
-    <h1>Para você, minha linda ❤️</h1>
-    <p>Esse site é só um pedacinho do quanto você é especial pra mim.</p>
-  </header>
-
-  <section>
-    <h2>titulo</h2>
-    <p>Minha linda, quero começar te agradecendo por tudo que fez e faz por mim, por cada momento vivido e que já sao muitos, mas que quero viver infinitos com vc, cada vez mais único. Eu te amo tanto, em tão pouco tempo vc chegou e me mostrou uma outra forma de ver a vida, de ver as coisas, aprendo tanto com vc, os momentos com vc são tão leves que parece que nos conhecemos desde criança, me sinto tão confortável em ser eu mesmo com vc, como nunca me senti na vida. Em tão pouco tempo vc reconstruiu o significado de amor, reciprocidade, companheirismo, amizade, conexão pra mim, coisas que me faltavam, ou até mesmo que nem acreditava mais, era pra eu ser agora só eu, ficava com uma aqui, outra ali e viver minha vida, mas vc chegou de uma forma, que fez eu ver que o amor existe, que a amizade entre homem e mulher existe, que a reciprocidade existe, cada um com sua intensidade, mas que é recíproco. 
-      Eu sinto uma felicidade tão grande com vc, um frio na barriga tão gostoso quando te vejo todos os dias, algo que nunca senti. As vezes penso que eu não te escolhi, que na vdd vc sempre foi minha, mas em cada momento da vida da forma que tinha que ser, primeiro como minha amiga, depois como a minha melhor amiga(ligando de noite chorando no meio da lagoa da pampulha kkkkk) e agora como a minha futura namorada, eu sou uma pessoa péssima de memória, mas quando o assunto é vc, consigo lembrar de tanta coisa, desde quando éramos só amigos até hoje, de momentos e histórias, e isso pra mim fica parecendo uma forma de demonstração que eu não te escolhi, mas que vc ja era minha desde o início, mas que tínhamos que passar por momentos importantes, pra hoje estarmos aqui juntos.</p>
-  </section>
-
-  <section>
-    <h2>Galeria de Fotos</h2>
-    <div class="galeria">
-      <img src="imagens/foto 1.png" alt="">
-      <img src="imagens/foto 2.jpg" alt="">
-      <img src="imagens/foto 3.jpg" alt="">
-      <img src="imagens/foto 4.jpg" alt="">
-      <img src="imagens/foto 5.jpg" alt="">
-      <img src="imagens/foto 6.jpg" alt="">
-      <img src="imagens/foto 7.jpg" alt="">
-      <img src="imagens/foto 8.jpg" alt="">
-      <img src="imagens/foto 9.jpg" alt="">
-      <img src="imagens/foto 10.jpg" alt="">
-      <img src="imagens/foto 11.jpg" alt="">
-      <img src="imagens/foto 12.jpg" alt="">
-      <img src="imagens/foto 14.jpg" alt="">
-      <img src="imagens/foto 15.jpg" alt="">
-      <img src="imagens/foto 16.jpg" alt="">
-    </div>
-  </section>
-
-  <section class="musicas">
-    <h2> Minha LINDAAAA</h2>
-    <a href="https://open.spotify.com/playlist/4tyjGwI5NhMkTZ22RDrQjj?si=cde82881f95b477a" target="_blank">Playlist para a Lelis</a>
-    <a href="curiosidade.html" target="_blank">Curiosidades</a>
-  </section>
-
-  <footer>
-    <p> ❤️</p>
-  </footer>
-
-  <script>
-    // Corações subindo
-    function createHeart() {
-      const heart = document.createElement('div');
-      heart.className = 'heart';
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.animationDuration = (5 + Math.random() * 5) + 's';
-      document.querySelector('.hearts').appendChild(heart);
-
-      setTimeout(() => {
-        heart.remove();
-      }, 10000);
-    }
-
-    setInterval(createHeart, 300);
-
-    // Controle do áudio
-    const audio = document.getElementById('background-music');
-    const btn = document.getElementById('audio-control');
-
-    btn.addEventListener('click', () => {
-      if (audio.paused) {
-        audio.play();
-        btn.innerHTML = '⏸️'; // Ícone de pausa
-      } else {
-        audio.pause();
-        btn.innerHTML = '▶️'; // Ícone de play
-      }
-    });
-  </script>
-</body>
-</html>
+  </head>
+  <body>
+    <!-- Corações animados -->
+    <div class="hearts"></div>
+  
+  
+    <header>
+      <h1>Curiosidades sobre a leleee ❤️</h1>
+      <p>Um pouquinho sobre vc</p>
+    </header>
+  
+    <section>
+      <h2>Curiosidades</h2>
+      <p></p>
+    </section>
+    
+      <script>
+        // Corações subindo
+        function createHeart() {
+          const heart = document.createElement('div');
+          heart.className = 'heart';
+          heart.style.left = Math.random() * 100 + 'vw';
+          heart.style.animationDuration = (5 + Math.random() * 5) + 's';
+          document.querySelector('.hearts').appendChild(heart);
+    
+          setTimeout(() => {
+            heart.remove();
+          }, 10000);
+        }
+    
+        setInterval(createHeart, 300);
+    
+        // Controle do áudio
+        const audio = document.getElementById('background-music');
+        const btn = document.getElementById('audio-control');
+    
+        btn.addEventListener('click', () => {
+          if (audio.paused) {
+            audio.play();
+            btn.innerHTML = '⏸️'; // Ícone de pausa
+          } else {
+            audio.pause();
+            btn.innerHTML = '▶️'; // Ícone de play
+          }
+        });
+      </script>
+    </body>
+    </html>
+      
